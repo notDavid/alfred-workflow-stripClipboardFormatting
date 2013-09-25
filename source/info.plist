@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>nl.staron.david.clipboardstripformatting</string>
+	<key>connections</key>
+	<dict>
+		<key>032AFA24-5F5A-4E37-B3ED-63875E0FA490</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0891A268-1908-4A5C-AF5C-9DF6347B34DA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>F179FC0B-B20B-477C-BF80-A63A7DD54F21</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>032AFA24-5F5A-4E37-B3ED-63875E0FA490</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>David Staron</string>
+	<key>description</key>
+	<string>Strips clipboard text formatting</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Strip clipboard text formatting</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Formatting stripped...</string>
+				<key>title</key>
+				<string>Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>0891A268-1908-4A5C-AF5C-9DF6347B34DA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>stripclipboardformatting</string>
+				<key>text</key>
+				<string>Strip clipboard text formatting</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F179FC0B-B20B-477C-BF80-A63A7DD54F21</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>pbpaste | pbcopy</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>032AFA24-5F5A-4E37-B3ED-63875E0FA490</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Why?
+
+1. Because i always forget about Command-Shift-Option-V.
+2. Typing the above key combination hurts my brain.
+3. Command-Shift-Option-V (os x native shortcut to strip formatting before pasting) doesn't work in every app.</string>
+	<key>uidata</key>
+	<dict>
+		<key>032AFA24-5F5A-4E37-B3ED-63875E0FA490</key>
+		<dict>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>0891A268-1908-4A5C-AF5C-9DF6347B34DA</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>F179FC0B-B20B-477C-BF80-A63A7DD54F21</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>david@staron.nl</string>
+</dict>
+</plist>
