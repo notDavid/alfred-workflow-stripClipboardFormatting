@@ -1,5 +1,5 @@
 {
     "version": 1.0,    
-	"download_url": "https://github.com/DavidStaron/alfred-workflow-stripClipboardFormatting/raw/master/update/clipboardstripformatting.json",
+	"download_url": "https://github.com/DavidStaron/alfred-workflow-stripClipboardFormatting/raw/master/Alfred-Strip.clipboard.text.formatting.alfredworkflow",
     "description": "initial version"
 }
